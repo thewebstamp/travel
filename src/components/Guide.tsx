@@ -14,7 +14,7 @@ const Guide = () => {
                     <label className="text-blue-950 text-[17.5px] my-[2px] font-bold">WE ARE HERE FOR YOU</label>
                     <h2 className="font-bold text-3xl mb-2.5">Guide to Easy Path</h2>
                 </div>
-                <p className="text-[15.5px] sm:max-w-[470px] m-auto lg:m-0">Only with the travel application, you will no longer get lost and get lost again, because we already support offline maps when there's no internet connection in the field. Invite your friends and relatives to have fun in the wilderness, through the valley, and reach the top of the mountain</p>
+                <p className="text-[15.5px] sm:max-w-[470px] m-auto lg:m-0">Only with the travel application, you will no longer get lost and get lost again, because we already support offline maps when there’s no internet connection in the field. Invite your friends and relatives to have fun in the wilderness, through the valley, and reach the top of the mountain</p>
             </div>
 
             <div className="relative">
