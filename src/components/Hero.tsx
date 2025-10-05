@@ -4,8 +4,8 @@ import Button from "./Button";
 
 const Hero = () => {
     return (
-        <section className="section min-h-screen bg-gradient-to-b from-white from-25% to-amber-100 to-100% container_width py-15 pt-15 lg:pt-12">
-            <div className="lg:mx-10 flex flex-col justify-center lg:flex-row gap-25 lg:gap-25 lg:justify-start lg:items-center sm:gap-22">
+        <section className="section min-h-screen bg-gradient-to-b from-white from-25% to-amber-100 to-100% container_width">
+            <div className="lg:mx-10 flex flex-col justify-center lg:flex-row gap-25 lg:gap-25 lg:justify-start lg:items-center sm:gap-22 py-15 pt-15 lg:pt-12">
                 <div className="px-3 lg:px-10 relative z-20 flex flex-col gap-2 sm:gap-5 justify-center items-center text-center lg:text-left lg:items-start sm:!w-[470px] mx-auto lg:mx-0 lg:!w-1/2">
                     <div className="flex flex-col gap-2 items-center lg:items-start w-[85%] sm:!w-[70%] lg:!w-full max-w-[430px]">
                         <Image
