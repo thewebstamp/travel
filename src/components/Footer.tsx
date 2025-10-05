@@ -29,7 +29,7 @@ const Footer = () => {
                         />
                     </Link>
                     <div className="sm:col-span-2">
-                        <h2 className="font-bold text-[18px] text-gray-900 mb-2.5 lg:mb-4">Learn More</h2>
+                        <h2 className="font-bold text-[18.5px] text-gray-900 mb-2.5 lg:mb-4">Learn More</h2>
                         <div>
                             <ul className="flex flex-col gap-2.5">
                                 {
@@ -41,7 +41,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="sm:col-span-2">
-                        <h2 className="font-bold text-[18px] text-gray-900 mb-2.5 lg:mb-4">Community</h2>
+                        <h2 className="font-bold text-[18.5px] text-gray-900 mb-2.5 lg:mb-4">Community</h2>
                         <div>
                             <ul className="flex flex-col gap-2.5">
                                 {
@@ -53,7 +53,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="col-span-2 lg:col-span-3 my-1 sm:my-0">
-                        <h2 className="font-bold text-[18px] text-gray-900 mb-2.5 lg:mb-4">Contact Us</h2>
+                        <h2 className="font-bold text-[18.5px] text-gray-900 mb-2.5 lg:mb-4">Contact Us</h2>
                         <div>
                             <ul className="flex flex-col gap-2.5">
                                 {
@@ -65,7 +65,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="col-span-2 sm:col-span-2 flex flex-col items-center lg:items-start">
-                        <h2 className="font-bold text-[18px] text-gray-900 mb-2.5 lg:mb-4">Social</h2>
+                        <h2 className="font-bold text-[18.5px] text-gray-900 mb-2.5 lg:mb-4">Social</h2>
                         <div className="flex items-center gap-3">
                             {
                                 social.map((icon, i) => (
