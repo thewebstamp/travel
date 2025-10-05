@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container_width {
-  @apply container mx-auto px-4 lg:px-10 lg:mx-10;
+  @apply container mx-auto px-4 lg:px-10;
 }
 
 .section {

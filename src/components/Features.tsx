@@ -29,56 +29,57 @@ const Features_Comp = ({ icon, title, description, icon_alt }: FeatureProps) => 
 const Features = () => {
     return (
         <section className="relative container_width h-[fit-content] py-15 lg:py-20">
-
-            <div className="absolute h-full">
-                <Image
-                    src="/feature-bg.png"
-                    alt="features"
-                    width={1080}
-                    height={800}
-                    className="h-full"
-                />
-            </div>
-
-            <div className=" px-3 lg:px-0 lg:flex lg:justify-between lg:gap-10 lg:items-center">
-                <div className="bg-[#19aa5516] relative z-20 hidden lg:block rounded-3xl">
+            <div className="lg:mx-10">
+                <div className="absolute h-full">
                     <Image
-                        src="/phone.png"
-                        alt="camp"
-                        width={350}
-                        height={200}
-                        className="rotate-10 bg-[#f2995134] rounded-3xl"
+                        src="/feature-bg.png"
+                        alt="features"
+                        width={1080}
+                        height={800}
+                        className="h-full"
                     />
                 </div>
-                <div>
-                    <div className="relative z-20 px-3 lg:px-0 mb-7 sm:mb-10 lg:mb-8 sm:max-w-[400px] mx-auto lg:mx-0">
-                        <h2 className="text-4xl font-bold text-center lg:text-left text-[#EC5815]">Our Features</h2>
+
+                <div className=" px-3 lg:px-0 lg:flex lg:justify-between lg:gap-10 lg:items-center">
+                    <div className="bg-[#19aa5516] relative z-20 hidden lg:block rounded-3xl">
+                        <Image
+                            src="/phone.png"
+                            alt="camp"
+                            width={350}
+                            height={200}
+                            className="rotate-10 bg-[#f2995134] rounded-3xl"
+                        />
                     </div>
-                    <div className="relative z-20 grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-10 lg:gap-6 px-5 sm:px-8 lg:px-0">
-                        <Features_Comp
-                            icon="/map.svg"
-                            icon_alt="map"
-                            title="Real Maps Can Be Offline"
-                            description="We provide a solution for you to be able to use our application when climbing. Yes, offline maps you can use any time there is no signal at the location."
-                        />
-                        <Features_Comp
-                            icon="/calendar.svg"
-                            icon_alt="calendar"
-                            title="Set an Adventure Schedule"
-                            description="Schedule an adventure with friends. On holidays, there are many interesting offers from Travel for you to select your choicest and live the experience."
-                        />
-                        <Features_Comp
-                            icon="/tech.svg"
-                            icon_alt="tech"
-                            title="Techonology Using Augmented Reality"
-                            description="Technology uses augmented reality as a guide to your hiking trail in the forest to the top of the mountain. Already supported by the latest technology without an internet connection."
-                        />
-                        <Features_Comp
-                            icon="/location.svg"
-                            icon_alt="location"
-                            title="Many New Locations Every Month"
-                            description="Lots of new locations every month because we have a community of climbers who share their best experiences with climbing"
-                        />
+                    <div>
+                        <div className="relative z-20 px-3 lg:px-0 mb-7 sm:mb-10 lg:mb-8 sm:max-w-[400px] mx-auto lg:mx-0">
+                            <h2 className="text-4xl font-bold text-center lg:text-left text-[#EC5815]">Our Features</h2>
+                        </div>
+                        <div className="relative z-20 grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-10 lg:gap-6 px-5 sm:px-8 lg:px-0">
+                            <Features_Comp
+                                icon="/map.svg"
+                                icon_alt="map"
+                                title="Real Maps Can Be Offline"
+                                description="We provide a solution for you to be able to use our application when climbing. Yes, offline maps you can use any time there is no signal at the location."
+                            />
+                            <Features_Comp
+                                icon="/calendar.svg"
+                                icon_alt="calendar"
+                                title="Set an Adventure Schedule"
+                                description="Schedule an adventure with friends. On holidays, there are many interesting offers from Travel for you to select your choicest and live the experience."
+                            />
+                            <Features_Comp
+                                icon="/tech.svg"
+                                icon_alt="tech"
+                                title="Techonology Using Augmented Reality"
+                                description="Technology uses augmented reality as a guide to your hiking trail in the forest to the top of the mountain. Already supported by the latest technology without an internet connection."
+                            />
+                            <Features_Comp
+                                icon="/location.svg"
+                                icon_alt="location"
+                                title="Many New Locations Every Month"
+                                description="Lots of new locations every month because we have a community of climbers who share their best experiences with climbing"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>

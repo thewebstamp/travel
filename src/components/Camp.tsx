@@ -79,50 +79,52 @@ const Camp = () => {
 
     return (
         <section className="section container_width py-14 sm:py-17">
-            <div className="relative">
-                <div className="flex gap-1 justify-end mb-1 px-1 sm:px-3">
-                    <button onClick={() => { scroll("left") }} type="button" className="control_btn flex_center">
-                        {'<'}
-                    </button>
-                    <button onClick={() => { scroll("right") }} type="button" className="control_btn flex_center">
-                        {'>'}
-                    </button>
-                </div>
-
-                <div className="relative overflow-x-hidden">
-                    <div
-                        ref={scrollRef}
-                        onTouchStart={handle_touch_start}
-                        onTouchEnd={handle_touch_end}
-                        className="overflow-x-hidden flex gap-3 snap-x snap-mandatory"
-                    >
-                        <CampSite
-                            image="/img-1.png"
-                            title="Pima Turf Camp"
-                            subtitle="Aris, Panama"
-                            people_joined="50"
-                        />
-                        <CampSite
-                            image="/img-2.png"
-                            title="Sufa Tora Camp"
-                            subtitle="Mentis, Ariel"
-                            people_joined="47"
-                        />
-                        <CampSite
-                            image="/img-1.png"
-                            title="Coma Rapus Camp"
-                            subtitle="Fonda, Costa"
-                            people_joined="58"
-                        />
+            <div className="lg:mx-10">
+                <div className="relative">
+                    <div className="flex gap-1 justify-end mb-1 px-1 sm:px-3">
+                        <button onClick={() => { scroll("left") }} type="button" className="control_btn flex_center">
+                            {'<'}
+                        </button>
+                        <button onClick={() => { scroll("right") }} type="button" className="control_btn flex_center">
+                            {'>'}
+                        </button>
                     </div>
-                </div>
 
-                <article className="relative z-20 mt-4 sm:mt-10 lg:mt-[-70px] px-5 text-center lg:text-left">
-                    <div className="sm:w-[480px] lg:w-[670px] mx-auto lg:mr-2 dark_green px-5 sm:px-6 py-7 sm:py-9 rounded-3xl shadow-lg flex flex-col gap-2">
-                        <h2 className="text-2xl sm:text-3xl sm:px-5 lg:px-0"><strong>Feeling Lost</strong> And Not Knowing The Way?</h2>
-                        <p className="text-[15.5px] text-gray-200">With our app, you’ll always know where to go - discover routes, camps, and hidden spots with confidence. Explore freely, guided by maps and insights built for travelers like you.</p>
+                    <div className="relative overflow-x-hidden">
+                        <div
+                            ref={scrollRef}
+                            onTouchStart={handle_touch_start}
+                            onTouchEnd={handle_touch_end}
+                            className="overflow-x-hidden flex gap-3 snap-x snap-mandatory"
+                        >
+                            <CampSite
+                                image="/img-1.png"
+                                title="Pima Turf Camp"
+                                subtitle="Aris, Panama"
+                                people_joined="50"
+                            />
+                            <CampSite
+                                image="/img-2.png"
+                                title="Sufa Tora Camp"
+                                subtitle="Mentis, Ariel"
+                                people_joined="47"
+                            />
+                            <CampSite
+                                image="/img-1.png"
+                                title="Coma Rapus Camp"
+                                subtitle="Fonda, Costa"
+                                people_joined="58"
+                            />
+                        </div>
                     </div>
-                </article>
+
+                    <article className="relative z-20 mt-4 sm:mt-10 lg:mt-[-70px] px-5 text-center lg:text-left">
+                        <div className="sm:w-[480px] lg:w-[670px] mx-auto lg:mr-2 dark_green px-5 sm:px-6 py-7 sm:py-9 rounded-3xl shadow-lg flex flex-col gap-2">
+                            <h2 className="text-2xl sm:text-3xl sm:px-5 lg:px-0"><strong>Feeling Lost</strong> And Not Knowing The Way?</h2>
+                            <p className="text-[15.5px] text-gray-200">With our app, you’ll always know where to go - discover routes, camps, and hidden spots with confidence. Explore freely, guided by maps and insights built for travelers like you.</p>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
     );
