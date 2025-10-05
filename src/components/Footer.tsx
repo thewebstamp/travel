@@ -29,43 +29,43 @@ const Footer = () => {
                         />
                     </Link>
                     <div className="sm:col-span-2">
-                        <h2 className="font-bold text-lg text-gray-900 mb-2.5 lg:mb-4">Learn More</h2>
+                        <h2 className="font-bold text-[18px] text-gray-900 mb-2.5 lg:mb-4">Learn More</h2>
                         <div>
                             <ul className="flex flex-col gap-2.5">
                                 {
                                     learn_more.map((learn, i) => (
-                                        <li key={i} className="cursor-pointer text-sm text-gray-700">{learn}</li>
+                                        <li key={i} className="cursor-pointer text-[15.5px] text-gray-700">{learn}</li>
                                     ))
                                 }
                             </ul>
                         </div>
                     </div>
                     <div className="sm:col-span-2">
-                        <h2 className="font-bold text-lg text-gray-900 mb-2.5 lg:mb-4">Community</h2>
+                        <h2 className="font-bold text-[18px] text-gray-900 mb-2.5 lg:mb-4">Community</h2>
                         <div>
                             <ul className="flex flex-col gap-2.5">
                                 {
                                     community.map((community, i) => (
-                                        <li key={i} className="cursor-pointer text-sm text-gray-700">{community}</li>
+                                        <li key={i} className="cursor-pointer text-[15.5px] text-gray-700">{community}</li>
                                     ))
                                 }
                             </ul>
                         </div>
                     </div>
                     <div className="col-span-2 lg:col-span-3 my-1 sm:my-0">
-                        <h2 className="font-bold text-lg text-gray-900 mb-2.5 lg:mb-4">Contact Us</h2>
+                        <h2 className="font-bold text-[18px] text-gray-900 mb-2.5 lg:mb-4">Contact Us</h2>
                         <div>
                             <ul className="flex flex-col gap-2.5">
                                 {
                                     contact_us.map((contact, i) => (
-                                        <li key={i} className="text-sm text-gray-700">{`${contact.title}: `} <strong className="ml-2 cursor-pointer text-gray-900">{`${contact.value}`}</strong></li>
+                                        <li key={i} className="text-[15.5px] text-gray-700">{`${contact.title}: `} <strong className="ml-2 cursor-pointer text-gray-900">{`${contact.value}`}</strong></li>
                                     ))
                                 }
                             </ul>
                         </div>
                     </div>
                     <div className="col-span-2 sm:col-span-2 flex flex-col items-center lg:items-start">
-                        <h2 className="font-bold text-lg text-gray-900 mb-2.5 lg:mb-4">Social</h2>
+                        <h2 className="font-bold text-[18px] text-gray-900 mb-2.5 lg:mb-4">Social</h2>
                         <div className="flex items-center gap-3">
                             {
                                 social.map((icon, i) => (
@@ -85,7 +85,7 @@ const Footer = () => {
 
                 <div>
                     <hr />
-                    <p className="py-5 lg:py-4 text-sm font-heading font-semibold text-gray-700 lg:text-right">{new Date().getFullYear()} Travel | All rights reserved</p>
+                    <p className="py-5 lg:py-4 text-[15.5px] font-heading font-semibold text-gray-700 lg:text-right">{new Date().getFullYear()} Travel | All rights reserved</p>
                 </div>
             </div>
         </footer>

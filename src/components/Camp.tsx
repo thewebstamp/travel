@@ -20,8 +20,8 @@ const CampSite = ({ image, title, subtitle, people_joined }: CampSiteProps) => {
                     <Image src="/folded-map.svg" alt="map" width={17} height={17} />
                 </span>
                 <span>
-                    <strong className="text-[15.5px] leading-[1rem]">{title}</strong>
-                    <p className="text-gray-200 text-[13.5px] leading-[1rem] font-heading">{subtitle}</p>
+                    <strong className="text-[16px] leading-[1rem]">{title}</strong>
+                    <p className="text-gray-200 text-[14px] leading-[1rem] font-heading">{subtitle}</p>
                 </span>
             </div>
             <div className="absolute bottom-3 left-3 sm:bottom-4 sm:left-4 flex gap-3 items-center">
@@ -32,7 +32,7 @@ const CampSite = ({ image, title, subtitle, people_joined }: CampSiteProps) => {
                         ))
                     }
                 </div>
-                <strong className="text-[14px] font-heading">{people_joined}+ Joined</strong>
+                <strong className="text-[14.5px] font-heading">{people_joined}+ Joined</strong>
             </div>
         </div>
     );
@@ -121,7 +121,7 @@ const Camp = () => {
                     <article className="relative z-20 mt-4 sm:mt-10 lg:mt-[-70px] px-5 text-center lg:text-left">
                         <div className="sm:w-[480px] lg:w-[670px] mx-auto lg:mr-2 dark_green px-5 sm:px-6 py-7 sm:py-9 rounded-3xl shadow-lg flex flex-col gap-2">
                             <h2 className="text-2xl sm:text-3xl sm:px-5 lg:px-0"><strong>Feeling Lost</strong> And Not Knowing The Way?</h2>
-                            <p className="text-[16px] text-gray-200">With our app, you’ll always know where to go - discover routes, camps, and hidden spots with confidence. Explore freely, guided by maps and insights built for travelers like you.</p>
+                            <p className="text-[16.5px] text-gray-200">With our app, you’ll always know where to go - discover routes, camps, and hidden spots with confidence. Explore freely, guided by maps and insights built for travelers like you.</p>
                         </div>
                     </article>
                 </div>

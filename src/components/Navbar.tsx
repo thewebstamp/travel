@@ -27,7 +27,7 @@ const Navbar = () => {
                 <ul className={`font-heading transition-all absolute flex flex-col items-center gap-13 translate-x-full pt-24 z-30 bg-white ${openMenu && "!bg-gray-900 !translate-x-0"} h-screen w-screen top-0 left-0 lg:flex-row lg:gap-10 lg:relative lg:h-auto lg:w-auto lg:pt-0 lg:translate-x-0`}>
                     {
                         nav_links.map((link, i) => (
-                            <Link key={i} href="/" onClick={() => { if (!link.active) alert("This is just a demo"); setOpenMenu(false); }} className={`w-[fit-content] cursor-pointer pb-[1px] transition-all text-gray-300 lg:text-gray-500 hover:text-gray-800 text-[19.5px] lg:text-[18px] font-bold ${link.active && "border-b-3 border-amber-600 font-heading !text-gray-50 lg:!text-gray-950 !font-bold"}`}>{link.name}</Link>
+                            <Link key={i} href="/" onClick={() => { if (!link.active) alert("This is just a demo"); setOpenMenu(false); }} className={`w-[fit-content] cursor-pointer pb-[1px] transition-all text-gray-300 lg:text-gray-500 hover:text-gray-800 text-[20px] lg:text-[18.5px] font-bold ${link.active && "border-b-3 border-amber-600 font-heading !text-gray-50 lg:!text-gray-950 !font-bold"}`}>{link.name}</Link>
                         ))
                     }
                 </ul>

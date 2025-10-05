@@ -21,7 +21,7 @@ const Features_Comp = ({ icon, title, description, icon_alt }: FeatureProps) => 
                 </div>
                 <h3 className="font-bold sm:max-w-[470px] mx-auto text-[21px] my-1 text-gray-800 px-8 sm:px-0 sm:pr-10">{title}</h3>
             </div>
-            <p className="text-[16px] sm:max-w-[470px] mx-auto text-gray-700">{description}</p>
+            <p className="text-[16.5px] sm:max-w-[470px] mx-auto text-gray-700">{description}</p>
         </div>
     );
 };

@@ -15,7 +15,7 @@ const Guide = () => {
                         <label className="text-blue-950 text-[17px] my-[2px] font-bold">WE ARE HERE FOR YOU</label>
                         <h2 className="font-bold text-3xl mb-2.5">Guide to Easy Path</h2>
                     </div>
-                    <p className="text-[16px] sm:max-w-[470px] m-auto lg:m-0">Only with the travel application, you will no longer get lost and get lost again, because we already support offline maps when there’s no internet connection in the field. Invite your friends and relatives to have fun in the wilderness, through the valley, and reach the top of the mountain</p>
+                    <p className="text-[16.5px] sm:max-w-[470px] m-auto lg:m-0">Only with the travel application, you will no longer get lost and get lost again, because we already support offline maps when there’s no internet connection in the field. Invite your friends and relatives to have fun in the wilderness, through the valley, and reach the top of the mountain</p>
                 </div>
 
                 <div className="relative">
@@ -38,12 +38,12 @@ const Guide = () => {
                         />
                         <div className="flex flex-col gap-5">
                             <div className="flex flex-col">
-                                <p className="flex gap-5 text-gray-500 text-sm font-bold">Destination <span className="text-green-600">48 mins</span></p>
-                                <p className="font-heading text-[17.5px] font-bold">Fora Parientus</p>
+                                <p className="flex gap-5 text-gray-500 text-15.5 font-bold">Destination <span className="text-green-600">48 mins</span></p>
+                                <p className="font-heading text-[18px] font-bold">Fora Parientus</p>
                             </div>
                             <div className="flex flex-col">
-                                <p className="text-gray-500 text-sm font-bold">Start track</p>
-                                <p className="font-heading text-[17.5px] font-bold">Curame Liana</p>
+                                <p className="text-gray-500 text-15.5 font-bold">Start track</p>
+                                <p className="font-heading text-[18px] font-bold">Curame Liana</p>
                             </div>
                         </div>
                     </div>
