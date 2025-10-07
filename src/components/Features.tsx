@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 interface FeatureProps {
     icon: string,
@@ -9,7 +10,13 @@ interface FeatureProps {
 
 const Features_Comp = ({ icon, title, description, icon_alt }: FeatureProps) => {
     return (
-        <div className="text-center sm:text-left">
+        <motion.div
+            className="text-center sm:text-left"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.2 }}
+        >
             <div className="sm:flex sm:items-center sm:gap-2 lg:block">
                 <div className="w-[fit-content] bg-gradient-to-b from-gray-400 from-25% to-gray-700 to-100% p-2.5 rounded-full m-auto sm:m-0">
                     <Image
@@ -22,7 +29,7 @@ const Features_Comp = ({ icon, title, description, icon_alt }: FeatureProps) => 
                 <h3 className="font-bold sm:max-w-[470px] mx-auto text-[21px] my-1 text-gray-800 px-8 sm:px-0 sm:pr-10">{title}</h3>
             </div>
             <p className="text-[16.5px] sm:max-w-[470px] mx-auto text-gray-700">{description}</p>
-        </div>
+        </motion.div>
     );
 };
 
@@ -41,7 +48,13 @@ const Features = () => {
                 </div>
 
                 <div className=" px-3 lg:px-0 lg:flex lg:justify-between lg:gap-10 lg:items-center">
-                    <div className="bg-[#19aa5516] relative z-20 hidden lg:block rounded-3xl">
+                    <motion.div
+                        className="bg-[#19aa5516] relative z-20 hidden lg:block rounded-3xl"
+                        initial={{ opacity: 0, x: -100 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                        viewport={{ once: true }}
+                    >
                         <Image
                             src="/phone.png"
                             alt="camp"
@@ -49,11 +62,17 @@ const Features = () => {
                             height={200}
                             className="rotate-10 bg-[#f2995134] rounded-3xl"
                         />
-                    </div>
+                    </motion.div>
                     <div>
-                        <div className="relative z-20 px-3 lg:px-0 mb-7 sm:mb-10 lg:mb-8 sm:max-w-[400px] mx-auto lg:mx-0">
+                        <motion.div
+                            className="relative z-20 px-3 lg:px-0 mb-7 sm:mb-10 lg:mb-8 sm:max-w-[400px] mx-auto lg:mx-0"
+                            initial={{ opacity: 0, y: 40 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.7, ease: "easeOut" }}
+                            viewport={{ once: true }}
+                        >
                             <h2 className="text-4xl font-bold text-center lg:text-left text-[#EC5815]">Our Features</h2>
-                        </div>
+                        </motion.div>
                         <div className="relative z-20 grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-10 lg:gap-6 px-5 sm:px-8 lg:px-0">
                             <Features_Comp
                                 icon="/map.svg"

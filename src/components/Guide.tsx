@@ -1,10 +1,17 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Guide = () => {
     return (
         <section className="bg-gradient-to-b from-white from-25% to-amber-100 to-100% container_width pb-15 lg:pb-20 lg:pt-10">
             <div className="lg:mx-10 flex flex-col gap-7">
-                <div className="px-2 lg:px-10 text-center lg:text-left lg:grid lg:grid-cols-2 lg:gap-15 lg:justify-center lg:items-center lg:w-full">
+                <motion.div
+                    className="px-2 lg:px-10 text-center lg:text-left lg:grid lg:grid-cols-2 lg:gap-15 lg:justify-center lg:items-center lg:w-full"
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    viewport={{ once: true, amount: 0.3 }}
+                >
                     <div className="flex flex-col items-center justify-center lg:justify-end lg:items-end">
                         <Image
                             src="/camp.svg"
@@ -15,11 +22,24 @@ const Guide = () => {
                         <label className="text-blue-950 text-[17px] my-[2px] font-bold">WE ARE HERE FOR YOU</label>
                         <h2 className="font-bold text-3xl mb-2.5">Guide to Easy Path</h2>
                     </div>
-                    <p className="text-[16.5px] sm:max-w-[470px] m-auto lg:m-0">Only with the travel application, you will no longer get lost and get lost again, because we already support offline maps when there’s no internet connection in the field. Invite your friends and relatives to have fun in the wilderness, through the valley, and reach the top of the mountain</p>
-                </div>
+                    <motion.p
+                        className="text-[16.5px] sm:max-w-[470px] m-auto lg:m-0"
+                        initial={{ opacity: 0, y: 40 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+                        viewport={{ once: true, amount: 0.3 }}
+                    >
+                        Only with the travel application, you will no longer get lost and get lost again, because we already support offline maps when there’s no internet connection in the field. Invite your friends and relatives to have fun in the wilderness, through the valley, and reach the top of the mountain
+                    </motion.p>
+                </motion.div>
 
                 <div className="relative">
-                    <div>
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 1.2, ease: "easeOut" }}
+                        viewport={{ once: true }}
+                    >
                         <Image
                             src="/boat.png"
                             alt="guide"
@@ -27,7 +47,7 @@ const Guide = () => {
                             height={800}
                             className="w-full sm:rounded-3xl min-h-[250px] max-h-[400px] object-cover object-center"
                         />
-                    </div>
+                    </motion.div>
                     <div className="relative sm:absolute sm:m-0 sm:top-10 sm:left-17 z-20 w-[fit-content] mx-auto mt-[-70px] bg-gradient-to-b from-gray-50 to-gray-300 py-4 px-5 flex items-center rounded-2xl shadow-lg">
                         <Image
                             src="/meter.svg"

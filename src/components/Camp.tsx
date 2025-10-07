@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useRef, useState } from "react";
+import { motion } from "framer-motion";
 
 interface CampSiteProps {
     image: string,
@@ -13,7 +14,13 @@ const people = ["/person-1.png", "/person-2.png", "/person-3.png", "/person-4.pn
 
 const CampSite = ({ image, title, subtitle, people_joined }: CampSiteProps) => {
     return (
-        <div className="relative text-gray-50 min-w-full lg:min-w-[700px] snap-start">
+        <motion.div
+            initial={{ opacity: 0, y: 60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="relative text-gray-50 min-w-full lg:min-w-[700px] snap-start"
+        >
             <Image src={image} alt="camp site" width={1800} height={1200} className="w-full min-h-[240px] rounded-2xl object-cover" />
             <div className="absolute top-3 left-3 sm:top-4 sm:left-4 flex gap-2">
                 <span className="rounded-full p-2.5 dark_green w-[fit-content] h-[fit-content]">
@@ -34,7 +41,7 @@ const CampSite = ({ image, title, subtitle, people_joined }: CampSiteProps) => {
                 </div>
                 <strong className="text-[14.5px] font-heading">{people_joined}+ Joined</strong>
             </div>
-        </div>
+        </motion.div>
     );
 };
 
@@ -78,17 +85,29 @@ const Camp = () => {
     };
 
     return (
-        <section className="section container_width py-14 sm:py-17">
+        <motion.section
+            className="section container_width py-14 sm:py-17"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.6 }}
+        >
             <div className="lg:mx-10">
                 <div className="relative">
-                    <div className="flex gap-1 justify-end mb-1 px-1 sm:px-3">
+                    <motion.div
+                        initial={{ opacity: 0, y: -10 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.4 }}
+                        className="flex gap-1 justify-end mb-1 px-1 sm:px-3"
+                    >
                         <button onClick={() => { scroll("left") }} type="button" className="control_btn flex_center">
                             {'<'}
                         </button>
                         <button onClick={() => { scroll("right") }} type="button" className="control_btn flex_center">
                             {'>'}
                         </button>
-                    </div>
+                    </motion.div>
 
                     <div className="relative overflow-x-hidden">
                         <div
@@ -118,15 +137,21 @@ const Camp = () => {
                         </div>
                     </div>
 
-                    <article className="relative z-20 mt-4 sm:mt-10 lg:mt-[-70px] px-5 text-center lg:text-left">
+                    <motion.article
+                        className="relative z-20 mt-4 sm:mt-10 lg:mt-[-70px] px-5 text-center lg:text-left"
+                        initial={{ opacity: 0, y: 70 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.3 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                    >
                         <div className="sm:w-[480px] lg:w-[670px] mx-auto lg:mr-2 dark_green px-5 sm:px-6 py-7 sm:py-9 rounded-3xl shadow-lg flex flex-col gap-2">
                             <h2 className="text-2xl sm:text-3xl sm:px-5 lg:px-0"><strong>Feeling Lost</strong> And Not Knowing The Way?</h2>
                             <p className="text-[16.5px] text-gray-200">With our app, you’ll always know where to go - discover routes, camps, and hidden spots with confidence. Explore freely, guided by maps and insights built for travelers like you.</p>
                         </div>
-                    </article>
+                    </motion.article>
                 </div>
             </div>
-        </section>
+        </motion.section>
     );
 };
 
